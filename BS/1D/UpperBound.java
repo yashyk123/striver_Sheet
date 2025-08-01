@@ -42,7 +42,7 @@ public class UpperBound {
             {
                 start = mid + 1; // Move to the right half
             }
-        }
+        }2
         System.out.println("Upper bound of " + x + " is: " + ans);
     }
 }
