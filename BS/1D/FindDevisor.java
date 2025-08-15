@@ -32,7 +32,7 @@ public class FindDevisor {
             {
                 sum += Math.ceil(arr[j]/i);
             }
-            
+
             if(sum<=limit)
         {
             return i;
@@ -46,7 +46,7 @@ public class FindDevisor {
         int target =0;
         for(int i=0; i<arr.length; i++)
         {
-            target += Math.ceil(arr[i]/divisor);
+            target += Math.ceil((double)arr[i]/(double)divisor); // add double to handle decimal values
         }
         return target;
     }
@@ -70,8 +70,8 @@ public class FindDevisor {
         return low;
     }
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3, 4, 5};
-        int limit = 8;
+        int arr[] = {1,2,5,9};
+        int limit = 6;
         System.out.println(findDevisor(arr, limit));
         System.out.println(byBinarySearch(arr, limit));
     }
