@@ -5,7 +5,7 @@ public class RotateString {
         int a = 0;
         if(s.length() != goal.length())
         {
-            return false;
+            return false; 
         }
         for (int i = 0; i < s.length(); i++) {
             for (int j = i + 1; j < s.length(); j++) {
@@ -15,7 +15,7 @@ public class RotateString {
                 result.append(s.charAt(k));
             }
             a++;
-            // Compare result with goal
+            // Compare result with goal 
             if (result.toString().equals(goal)) {
                 return true;
             }
